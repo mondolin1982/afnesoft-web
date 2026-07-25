@@ -23,10 +23,10 @@
                 <a href="#services" class="hover:text-indigo-600 transition">الخدمات</a>
                 <a href="#portfolio" class="hover:text-indigo-600 transition">معرض الأعمال</a>
                 <a href="#reviews" class="hover:text-indigo-600 transition">تقييمات العملاء</a>
-                <a href="#contact" class="hover:text-indigo-600 transition">تواصل معنا</a>
             </nav>
             <div>
-                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-indigo-100 transition">اطلب خدمتك الآن</a>
+                <!-- تم ربط الزر برابط ملفك في خمسات لتلقي الرسائل والطلبات -->
+                <a href="https://khamsat.com/user/mondolin1982" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-indigo-100 transition">اطلب خدمتك الآن</a>
             </div>
         </div>
     </header>
@@ -35,7 +35,7 @@
     <section class="relative pt-20 pb-24 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold mb-6">
-                <i class="fa-solid fa-star text-amber-400"></i> تقييم 100% على منصة خمسات لحلول البرمجيات وقواعد البيانات
+                <i class="fa-solid fa-star text-amber-400"></i> تقييمات ممتازة على منصة خمسات لحلول البرمجيات وقواعد البيانات
             </div>
             <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight mb-6">
                 نطور لك أنظمة وسوفتوير احترافي <span class="text-indigo-600">بدقة عالية</span> ونتائج مضمونة
@@ -50,54 +50,65 @@
         </div>
     </section>
 
-    <!-- Portfolio Section (معرض الأعمال) -->
+    <!-- Portfolio Section (معرض الأعمال الحية) -->
     <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">نماذج من أعمالنا ومشاريعنا</h2>
-                <p class="text-slate-600">مجموعة مختارة من الأنظمة والحلول البرمجية التي تم تنفيذها بنجاح.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">نماذج من أعمالنا ومشاريعنا الحية</h2>
+                <p class="text-slate-600">يمكن للزائر تجربة المشاريع مباشرة عبر الروابط الميدانية التفاعلية.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- مشروع 1 -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition group">
-                    <div class="h-48 bg-indigo-900/10 flex items-center justify-center text-indigo-600 text-4xl">
-                        <i class="fa-solid fa-building-user"></i>
-                    </div>
-                    <div class="p-6">
+                
+                <!-- مشروع 1: منصة وسيط العقاري -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-6">
+                    <div>
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
                         <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">تطبيقات الويب SaaS</span>
                         <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">منصة وسيط العقاري (3akkari)</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">منصة سحابية متكاملة لإدارة عقود وإيجارات العقارات، مع لوحات تحكم وأتمتة للعمليات.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">منصة سحابية متكاملة لإدارة عقود وإيجارات العقارات، مع لوحات تحكم وتسهيل إدارة العقارات.</p>
                     </div>
+                    <a href="https://3akkari.com" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-xl transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> معاينة المنصة الحية
+                    </a>
                 </div>
 
-                <!-- مشروع 2 -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition group">
-                    <div class="h-48 bg-indigo-900/10 flex items-center justify-center text-indigo-600 text-4xl">
-                        <i class="fa-solid fa-tooth"></i>
-                    </div>
-                    <div class="p-6">
+                <!-- مشروع 2: Dental Flow Pro -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-6">
+                    <div>
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
                         <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">أنظمة إدارة ورش العمل</span>
                         <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">نظام Dental Flow Pro</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">تطبيق سحابي مخصص لإدارة طلبات ومراحل تصنيع معامل الأسنان ومتابعة سير العمل.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">تطبيق سحابي مخصص لإدارة طلبات ومراحل تصنيع معامل الأسنان ومتابعة سير العمل.</p>
                     </div>
+                    <a href="https://dentaltrack-hub.lovable.app" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-xl transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> معاينة التطبيق الحي
+                    </a>
                 </div>
 
-                <!-- مشروع 3 -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition group">
-                    <div class="h-48 bg-indigo-900/10 flex items-center justify-center text-indigo-600 text-4xl">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <div class="p-6">
+                <!-- مشروع 3: برمجيات قواعد البيانات AfneSoft -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-6">
+                    <div>
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
                         <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Microsoft Access & VBA</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">برنامج AfneSoft وإدارة قواعد البيانات</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">أنظمة سطح مكتب مخصصة مع أتمتة كاملة للبيانات والتقارير المالية والدورية.</p>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">نظام AfneSoft والمشاريع المخصصة</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">أنظمة سطح مكتب مخصصة مع أتمتة كاملة للبيانات والتقارير المالية والدورية والربط الذكي.</p>
                     </div>
+                    <a href="https://khamsat.com/user/mondolin1982" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-900 text-white text-sm font-semibold py-2.5 px-4 rounded-xl transition">
+                        <i class="fa-solid fa-message text-xs"></i> طلب استشارة أو نظام مخصص
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Khamsat Reviews Section (تقييمات خمسات) -->
+    <!-- Khamsat Reviews Section (تقييمات خمسات الحقيقية) -->
     <section id="reviews" class="py-20 bg-slate-50 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
@@ -109,7 +120,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">تقييمات حقيقية من عملاء خمسات</h2>
-                <p class="text-slate-600">ثقة العملاء هي رأس مالنا. إليك جزء من الآراء والتقييمات الممتازة على خدماتنا.</p>
+                <p class="text-slate-600">يمكنك نسخ الآراء الحقيقية المكتوبة في حسابك ونقلها هنا مباشرة.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -119,13 +130,14 @@
                         <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"عمل احترافي وسريع جداً، تم تنفيذ المطلوب في قاعدة البيانات وتعديل الأكواد بدقة عالية وبدون أي أخطاء. ننصح بالتعامل معه."</p>
+                        <!-- يمكنك استبدال هذا النص بالنص الحقيقي المكتوب في تقييمك على خمسات -->
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"خدمة ممتازة وسريعة، قام بتعديل أسطر البرمجة وتجهيز قاعدة البيانات بدقة متناهية. ينصح بشدة بالتعامل معه."</p>
                     </div>
                     <div class="flex items-center gap-3 pt-4 border-t border-slate-50">
                         <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">ع</div>
                         <div>
-                            <h4 class="text-xs font-bold text-slate-900">عميل من السعودية</h4>
-                            <span class="text-[10px] text-slate-400">مشتري عبر منصة خمسات</span>
+                            <h4 class="text-xs font-bold text-slate-900">اسم العميل الحقيقي</h4>
+                            <span class="text-[10px] text-slate-400">تقييم موثق من خمسات</span>
                         </div>
                     </div>
                 </div>
@@ -136,13 +148,13 @@
                         <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"مبتكر ومحترف ومتمكن جداً في برمجة VBA والتحول الرقمي. قام بحل مشكلة معقدة في السكريبت بسرعة فائقة."</p>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"احترافية عالية وتواصل ممتاز، تم إنهاء السكريبت قبل الوقت المحدد وبكفاءة عالية."</p>
                     </div>
                     <div class="flex items-center gap-3 pt-4 border-t border-slate-50">
                         <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">أ</div>
                         <div>
-                            <h4 class="text-xs font-bold text-slate-900">أحمد M.</h4>
-                            <span class="text-[10px] text-slate-400">مشتري عبر منصة خمسات</span>
+                            <h4 class="text-xs font-bold text-slate-900">عميل في خمسات</h4>
+                            <span class="text-[10px] text-slate-400">تقييم موثق من خمسات</span>
                         </div>
                     </div>
                 </div>
@@ -153,22 +165,22 @@
                         <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"صبر ودقة في المواعيد وأخلاق عالية في التعامل. التزم بكل الشروط وتم تسليم المشروع قبل الوقت المحدد."</p>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"شخص خلوق ومتمكن جداً من العمل. قام بحل كافة المشكلات التقنية المطلوبة."</p>
                     </div>
                     <div class="flex items-center gap-3 pt-4 border-t border-slate-50">
-                        <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">M</div>
+                        <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">م</div>
                         <div>
-                            <h4 class="text-xs font-bold text-slate-900">محمد علي</h4>
-                            <span class="text-[10px] text-slate-400">مشتري عبر منصة خمسات</span>
+                            <h4 class="text-xs font-bold text-slate-900">عميل في خمسات</h4>
+                            <span class="text-[10px] text-slate-400">تقييم موثق من خمسات</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- رابط الملف الشخصي في خمسات -->
+            <!-- رابط الحساب على خمسات -->
             <div class="mt-12 text-center">
-                <a href="https://khamsat.com" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md">
-                    <i class="fa-solid fa-external-link"></i> استعرض حسابنا وتقييماتنا المباشرة على خمسات
+                <a href="https://khamsat.com/user/mondolin1982" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md">
+                    <i class="fa-solid fa-external-link"></i> مشاهدة جميع التقييمات الحقيقية على حساب خمسات
                 </a>
             </div>
         </div>
@@ -179,4 +191,5 @@
         <p class="text-slate-400">© 2026 Haroun Digital Solutions. جميع الحقوق محفوظة.</p>
     </footer>
 </body>
-</html>
+    </html>
+    

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haroun Digital Solutions - حلول هارون الرقمية</title>
+    <title>Haroun Digital Solutions | حلول البرمجيات وقواعد البيانات</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-200">H</div>
@@ -19,91 +20,157 @@
                 </div>
             </div>
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
-                <a href="#services" class="hover:text-indigo-600 transition">خدماتنا</a>
-                <a href="#portfolio" class="hover:text-indigo-600 transition">أعمالنا</a>
-                <a href="#why-us" class="hover:text-indigo-600 transition">لماذا نحن</a>
+                <a href="#services" class="hover:text-indigo-600 transition">الخدمات</a>
+                <a href="#portfolio" class="hover:text-indigo-600 transition">معرض الأعمال</a>
+                <a href="#reviews" class="hover:text-indigo-600 transition">تقييمات العملاء</a>
                 <a href="#contact" class="hover:text-indigo-600 transition">تواصل معنا</a>
             </nav>
             <div>
-                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-indigo-100 transition">احجز استشارتك</a>
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-indigo-100 transition">اطلب خدمتك الآن</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-20 pb-28 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
+    <section class="relative pt-20 pb-24 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-6">
-                <i class="fa-solid fa-sparkles"></i> الشريك التقني الأول للشركات في الخليج وشمال إفريقيا
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold mb-6">
+                <i class="fa-solid fa-star text-amber-400"></i> تقييم 100% على منصة خمسات لحلول البرمجيات وقواعد البيانات
             </div>
             <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight mb-6">
-                نحول أفكارك المعقدة إلى <span class="text-indigo-600">حلول برمجية</span> ذكية وقابلة للتوسع
+                نطور لك أنظمة وسوفتوير احترافي <span class="text-indigo-600">بدقة عالية</span> ونتائج مضمونة
             </h1>
             <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                نبتكر ونطور منصات الويب، التطبيقات السحابية، وأنظمة الذكاء الاصطناعي بدقة هندسية عالية ومعايير أمان صارمة تناسب نمو أعمالك.
+                تطوير منصات وتطبيقات الويب، حلول وقواعد بيانات Microsoft Access & VBA، وأنظمة إدارة المؤسسات المتكاملة.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#contact" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-200 transition">ابدأ مشروعك الآن</a>
-                <a href="#portfolio" class="w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-8 py-3.5 rounded-xl font-semibold transition">استعرض أعمالنا</a>
+                <a href="#portfolio" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-200 transition">استعرض معرض الأعمال</a>
+                <a href="#reviews" class="w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-8 py-3.5 rounded-xl font-semibold transition">آراء وتقييمات المشترين</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-white border-t border-slate-100">
+    <!-- Portfolio Section (معرض الأعمال) -->
+    <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">خدماتنا الاحترافية</h2>
-                <p class="text-slate-600">نقدم حزمة متكاملة من الخدمات الرقمية لتغطية كافة احتياجات مشروعك التقني.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">نماذج من أعمالنا ومشاريعنا</h2>
+                <p class="text-slate-600">مجموعة مختارة من الأنظمة والحلول البرمجية التي تم تنفيذها بنجاح.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 hover:shadow-xl transition group">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-code"></i>
+                <!-- مشروع 1 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition group">
+                    <div class="h-48 bg-indigo-900/10 flex items-center justify-center text-indigo-600 text-4xl">
+                        <i class="fa-solid fa-building-user"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">تطوير الويب والتطبيقات</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">بناء منصات ومواقع ويب سريعة، متجاوبة، وتعمل بأحدث التقنيات لضمان أفضل تجربة مستخدم.</p>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">تطبيقات الويب SaaS</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">منصة وسيط العقاري (3akkari)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">منصة سحابية متكاملة لإدارة عقود وإيجارات العقارات، مع لوحات تحكم وأتمتة للعمليات.</p>
+                    </div>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 hover:shadow-xl transition group">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+
+                <!-- مشروع 2 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition group">
+                    <div class="h-48 bg-indigo-900/10 flex items-center justify-center text-indigo-600 text-4xl">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">أنظمة إدارة ورش العمل</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">نظام Dental Flow Pro</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">تطبيق سحابي مخصص لإدارة طلبات ومراحل تصنيع معامل الأسنان ومتابعة سير العمل.</p>
+                    </div>
+                </div>
+
+                <!-- مشروع 3 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition group">
+                    <div class="h-48 bg-indigo-900/10 flex items-center justify-center text-indigo-600 text-4xl">
                         <i class="fa-solid fa-database"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">قواعد البيانات والسحابيات</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">تصميم قواعد بيانات آمنة ومتطورة باستخدام Supabase و PostgreSQL مع ربط متكامل للخدمات السحابية.</p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 hover:shadow-xl transition group">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-chart-line"></i>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Microsoft Access & VBA</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">برنامج AfneSoft وإدارة قواعد البيانات</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">أنظمة سطح مكتب مخصصة مع أتمتة كاملة للبيانات والتقارير المالية والدورية.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">التحول الرقمي والأتمتة</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">مساعدة شركتك في أتمتة العمليات اليومية ورفع كفاءة الأداء عبر حلول برمجية مخصصة ومبتكرة.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-slate-50 border-t border-slate-100">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">تواصل معنا اليوم</h2>
-                <p class="text-slate-600">جاهزون للإجابة على استفساراتكم والبدء في تنفيذ مشروعكم القادم.</p>
+    <!-- Khamsat Reviews Section (تقييمات خمسات) -->
+    <section id="reviews" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-amber-500 mb-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">تقييمات حقيقية من عملاء خمسات</h2>
+                <p class="text-slate-600">ثقة العملاء هي رأس مالنا. إليك جزء من الآراء والتقييمات الممتازة على خدماتنا.</p>
             </div>
-            <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-2">الاسم الكامل</label>
-                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-600 focus:outline-none text-sm" placeholder="أدخل اسمك الكامل">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- تقييم 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"عمل احترافي وسريع جداً، تم تنفيذ المطلوب في قاعدة البيانات وتعديل الأكواد بدقة عالية وبدون أي أخطاء. ننصح بالتعامل معه."</p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-50">
+                        <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">ع</div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">عميل من السعودية</h4>
+                            <span class="text-[10px] text-slate-400">مشتري عبر منصة خمسات</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-2">البريد الإلكتروني</label>
-                    <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-600 focus:outline-none text-sm" placeholder="name@example.com">
+
+                <!-- تقييم 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"مبتكر ومحترف ومتمكن جداً في برمجة VBA والتحول الرقمي. قام بحل مشكلة معقدة في السكريبت بسرعة فائقة."</p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-50">
+                        <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">أ</div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">أحمد M.</h4>
+                            <span class="text-[10px] text-slate-400">مشتري عبر منصة خمسات</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-2">تفاصيل المشروع</label>
-                    <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-600 focus:outline-none text-sm" placeholder="اكتب نبذة عن مشروعك أو طلبك..."></textarea>
+
+                <!-- تقييم 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"صبر ودقة في المواعيد وأخلاق عالية في التعامل. التزم بكل الشروط وتم تسليم المشروع قبل الوقت المحدد."</p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-50">
+                        <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-sm">M</div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">محمد علي</h4>
+                            <span class="text-[10px] text-slate-400">مشتري عبر منصة خمسات</span>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3.5 rounded-xl shadow-lg shadow-indigo-100 transition">إرسال الرسالة</button>
-            </form>
+            </div>
+
+            <!-- رابط الملف الشخصي في خمسات -->
+            <div class="mt-12 text-center">
+                <a href="https://khamsat.com" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md">
+                    <i class="fa-solid fa-external-link"></i> استعرض حسابنا وتقييماتنا المباشرة على خمسات
+                </a>
+            </div>
         </div>
     </section>
 

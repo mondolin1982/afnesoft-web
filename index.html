@@ -9,53 +9,51 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-200">H</div>
+    <!-- Header Navigation (تم تبسيطه وتغيير زر اطلب باللون الأخضر الفاتح) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">H</div>
                 <div>
-                    <span class="text-lg font-black tracking-tight text-slate-900 block leading-none">هارون الرقمية</span>
-                    <span class="text-xs text-indigo-600 font-semibold">Haroun Digital Solutions</span>
+                    <span class="text-sm font-black tracking-tight text-slate-900 block leading-none">هارون الرقمية</span>
+                    <span class="text-[9px] text-indigo-600 font-semibold block mt-0.5">Haroun Digital</span>
                 </div>
             </div>
-            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
-                <a href="#services" class="hover:text-indigo-600 transition">خدماتنا على خمسات</a>
-                <a href="#portfolio" class="hover:text-indigo-600 transition">معرض الأعمال</a>
-                <a href="#reviews" class="hover:text-indigo-600 transition">تقييمات العملاء</a>
-            </nav>
+            
             <div>
-                <a href="https://khamsat.com/user/afnes" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md shadow-indigo-100 transition">تواصل معي على خمسات</a>
+                <a href="https://khamsat.com/user/afnes" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-xl font-bold text-xs shadow-md transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-cart-shopping"></i> اطلب الآن
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-20 pb-24 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
+    <section class="relative pt-12 pb-16 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold mb-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold mb-4">
                 <i class="fa-solid fa-code"></i> تطوير برمجيات احترافية وقواعد بيانات سحابية
             </div>
-            <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+            <h1 class="text-2xl sm:text-5xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight mb-4">
                 حلول برمجة متكاملة لتطوير أعمالك مع <span class="text-indigo-600">خدمات خمسات المعتمدة</span>
             </h1>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p class="text-xs sm:text-base text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
                 نقدم خدمات تطوير تطبيقات الويب، صفحات الهبوط، أتمتة الأعمال بالذكاء الاصطناعي، وقواعد البيانات Microsoft Access.
             </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#services" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-200 transition">استعرض خدمات خمسات</a>
-                <a href="#portfolio" class="w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-8 py-3.5 rounded-xl font-semibold transition">معرض المشاريع الحية</a>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="#services" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg transition">استعرض الخدمات</a>
+                <a href="#portfolio" class="w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-bold text-sm transition">معرض المشاريع الحية</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section (خدمات خمسات المباشرة) -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Services Section (عرض الصور الحقيقية المرفوعة) -->
+    <section id="services" class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-indigo-600 font-bold text-sm uppercase tracking-wider">خدماتنا المباشرة</span>
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mt-2 mb-4">خدمات البرمجة والتطوير على منصة خمسات</h2>
-                <p class="text-slate-600">اختر الخدمة المناسبة لمشروعك واطلبها مباشرة عبر منصة خمسات لضمان التعامل المالي والتقني.</p>
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-indigo-600 font-bold text-xs uppercase tracking-wider">خدماتنا المباشرة</span>
+                <h2 class="text-xl sm:text-3xl font-bold tracking-tight text-slate-900 mt-1 mb-2">خدمات البرمجة والتطوير على منصة خمسات</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">اختر الخدمة المناسبة لمشروعك واطلبها مباشرة عبر منصة خمسات لضمان التعامل المالي والتقني.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -64,125 +62,105 @@
                 <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 bg-slate-200 overflow-hidden">
-                            <img src="https://khamsat.hsoubcdn.com/images/services/4415282/38d8a7c5c2a13ee12a4bdf4c502fb813.jpg" 
-                                 alt="سأصمم لك صفحة هبوط احترافية" 
-                                 class="w-full h-full object-cover hover:scale-105 transition duration-300"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/2563eb/ffffff?text=Landing+Pages';">
-                            <span class="absolute top-3 right-3 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">تصميم / صفحات هبوط</span>
+                            <img src="IMG_20260725_091012.jpg" 
+                                 alt="صفحات الهبوط" 
+                                 class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">تصميم / صفحات هبوط</span>
                         </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug line-clamp-2">سأصمم لك صفحة هبوط احترافية لزيادة العملاء والمبيعات</h3>
-                            <div class="flex items-center gap-2 mb-3">
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">سأصمم لك صفحة هبوط احترافية لزيادة العملاء والمبيعات</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
                                 <div class="flex text-amber-400 text-xs">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                 </div>
-                                <span class="text-xs text-slate-500 font-semibold">(1)</span>
+                                <span class="text-[11px] text-slate-500 font-semibold">(1)</span>
                             </div>
-                            <div class="text-indigo-600 font-black text-lg">تبدأ من $50.00</div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $50.00</div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <a href="https://khamsat.com/designing/landing-page-design/4415282-%D8%B3%D8%A3%D8%B5%D9%85%D9%85-%D9%84%D9%83-%D8%B5%D9%81%D8%AD%D8%A9-%D9%87%D8%A8%D9%88%D8%B7-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D8%B2%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-xl transition text-sm">
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/designing/landing-page-design/4415282-%D8%B3%D8%A3%D8%B5%D9%85%D9%85-%D9%84%D9%83-%D8%B5%D9%81%D8%AD%D8%A9-%D9%87%D8%A8%D9%88%D8%B7-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D8%B2%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
                             <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
                         </a>
                     </div>
                 </div>
 
-                <!-- خدمة 2: تصميم وتطوير تطبيقات ويب -->
+                <!-- خدمة 2: تطبيقات الويب -->
                 <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 bg-slate-200 overflow-hidden">
-                            <img src="https://khamsat.hsoubcdn.com/images/services/4427414/082f4dfdfb2591a2ddcf4d045d6545b7.jpg" 
-                                 alt="تصميم وتطوير تطبيقات ويب احترافية" 
-                                 class="w-full h-full object-cover hover:scale-105 transition duration-300"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/4f46e5/ffffff?text=Web+Apps';">
-                            <span class="absolute top-3 right-3 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">برمجة / تطبيقات ويب</span>
+                            <img src="IMG_20260725_091024.jpg" 
+                                 alt="تطبيقات الويب" 
+                                 class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">برمجة / تطبيقات ويب</span>
                         </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug line-clamp-2">تصميم وتطوير تطبيقات ويب احترافية مخصصة</h3>
-                            <div class="flex items-center gap-2 mb-3">
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">تصميم وتطوير تطبيقات ويب احترافية مخصصة</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
                                 <div class="flex text-amber-400 text-xs">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                 </div>
-                                <span class="text-xs text-slate-500 font-semibold">(1)</span>
+                                <span class="text-[11px] text-slate-500 font-semibold">(1)</span>
                             </div>
-                            <div class="text-indigo-600 font-black text-lg">تبدأ من $100.00</div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $100.00</div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <a href="https://khamsat.com/programming/full-app-creation/4427414-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%8A%D8%A8-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%85%D8%AE%D8%B5%D8%B5%D8%A9" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-xl transition text-sm">
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/programming/full-app-creation/4427414-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%8A%D8%A8-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%85%D8%AE%D8%B5%D8%B5%D8%A9" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
                             <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
                         </a>
                     </div>
                 </div>
 
-                <!-- خدمة 3: برامج سطح المكتب والاكسس -->
+                <!-- خدمة 3: تطبيقات سطح المكتب والبيانات -->
                 <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 bg-slate-200 overflow-hidden">
-                            <img src="https://khamsat.hsoubcdn.com/images/services/489634/df54f15ddcb127d1a5fb77e52b21c431.jpg" 
-                                 alt="اصمم لك برنامج محترف بالاكسس" 
-                                 class="w-full h-full object-cover hover:scale-105 transition duration-300"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/059669/ffffff?text=MS+Access';">
-                            <span class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">برمجة / تطبيقات مكتبية</span>
+                            <img src="IMG_20260725_091036.jpg" 
+                                 alt="تطبيق برامج الاكسس" 
+                                 class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">برمجة / تطبيقات مكتبية</span>
                         </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug line-clamp-2">اصمم لك برنامج محترف بالاكسس (Microsoft Access)</h3>
-                            <div class="flex items-center gap-2 mb-3">
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">اصمم لك برنامج محترف بالاكسس (Microsoft Access)</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
                                 <div class="flex text-amber-400 text-xs">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                 </div>
-                                <span class="text-xs text-slate-500 font-semibold">(96 تقييم)</span>
+                                <span class="text-[11px] text-slate-500 font-semibold">(96)</span>
                             </div>
-                            <div class="text-indigo-600 font-black text-lg">تبدأ من $10.00</div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $10.00</div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <a href="https://khamsat.com/programming/desktop-app/489634-%D8%A7%D8%B5%D9%85%D9%85-%D9%84%D9%83-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A8%D8%A7%D9%84%D8%A7%D9%83%D8%B3%D8%B3" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-xl transition text-sm">
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/programming/desktop-app/489634-%D8%A7%D8%B5%D9%85%D9%85-%D9%84%D9%83-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A8%D8%A7%D9%84%D8%A7%D9%83%D8%B3%D8%B3" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
                             <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
                         </a>
                     </div>
                 </div>
 
-                <!-- خدمة 4: أتمتة الأعمال بالذكاء الاصطناعي -->
+                <!-- خدمة 4: أتمتة الذكاء الاصطناعي -->
                 <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 bg-slate-200 overflow-hidden">
-                            <img src="https://khamsat.hsoubcdn.com/images/services/4435153/fbd73c6a4d7dcd48f4316beec230c1e8.jpg" 
-                                 alt="أتمتة الأعمال بالذكاء الاصطناعي" 
-                                 class="w-full h-full object-cover hover:scale-105 transition duration-300"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/d97706/ffffff?text=AI+Automation';">
-                            <span class="absolute top-3 right-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">ذكاء اصطناعي</span>
+                            <img src="IMG_20260725_091048.jpg" 
+                                 alt="أتمتة بالذكاء الاصطناعي" 
+                                 class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-purple-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">ذكاء اصطناعي</span>
                         </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-slate-900 mb-2 leading-snug line-clamp-2">أتمتة الأعمال وتكامل الأنظمة بالذكاء الاصطناعي</h3>
-                            <div class="flex items-center gap-2 mb-3">
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">أتمتة الأعمال وتكامل الأنظمة بالذكاء الاصطناعي</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
                                 <div class="flex text-amber-400 text-xs">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                 </div>
-                                <span class="text-xs text-slate-500 font-semibold">(جديدة)</span>
+                                <span class="text-[11px] text-slate-500 font-semibold">(جديدة)</span>
                             </div>
-                            <div class="text-indigo-600 font-black text-lg">تبدأ من $80.00</div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $80.00</div>
                         </div>
                     </div>
-                    <div class="p-5 pt-0">
-                        <a href="https://khamsat.com/ai-machine-learning/ai-automation/4435153-%D8%A3%D8%AA%D9%85%D8%AA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-xl transition text-sm">
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/ai-machine-learning/ai-automation/4435153-%D8%A3%D8%AA%D9%85%D8%AA%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
                             <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
                         </a>
                     </div>
@@ -192,150 +170,66 @@
         </div>
     </section>
 
-    <!-- Portfolio Section (معرض الأعمال الحية) -->
-    <section id="portfolio" class="py-20 bg-slate-50 border-t border-slate-100">
+    <!-- Portfolio Section (معرض الأعمال) -->
+    <section id="portfolio" class="py-12 bg-slate-50 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">نماذج من أعمالنا ومشاريعنا الحية</h2>
-                <p class="text-slate-600">يمكن للزائر تجربة المشاريع مباشرة عبر الروابط الميدانية التفاعلية.</p>
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-2">معرض الأعمال والمشاريع الحية</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">يمكن للزائر تجربة المشاريع مباشرة عبر الروابط الميدانية التفاعلية.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <!-- مشروع 1: منصة وسيط العقاري -->
-                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-6">
+                <!-- مشروع 1 -->
+                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-5">
                     <div>
-                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">
                             <i class="fa-solid fa-building-user"></i>
                         </div>
-                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">تطبيقات الويب SaaS</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">منصة وسيط العقاري (3akkari)</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">منصة سحابية متكاملة لإدارة عقود وإيجارات العقارات، مع لوحات تحكم وتسهيل إدارة العقارات.</p>
+                        <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">تطبيقات الويب SaaS</span>
+                        <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">منصة وسيط العقاري (3akkari)</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">منصة سحابية متكاملة لإدارة عقود وإيجارات العقارات مع لوحات تحكم وتسهيل إدارة العقارات.</p>
                     </div>
-                    <a href="https://3akkari.com" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-xl transition">
-                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> معاينة المنصة الحية
+                    <a href="https://3akkari.com" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> معاينة المنصة الحية
                     </a>
                 </div>
 
-                <!-- مشروع 2: Dental Flow Pro -->
-                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-6">
+                <!-- مشروع 2 -->
+                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-5">
                     <div>
-                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">
                             <i class="fa-solid fa-tooth"></i>
                         </div>
-                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">أنظمة إدارة ورش العمل</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">نظام Dental Flow Pro</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">تطبيق سحابي مخصص لإدارة طلبات ومراحل تصنيع معامل الأسنان ومتابعة سير العمل.</p>
+                        <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">أنظمة إدارة ورش العمل</span>
+                        <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">نظام Dental Flow Pro</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">تطبيق سحابي مخصص لإدارة طلبات ومراحل تصنيع معامل الأسنان ومتابعة سير العمل.</p>
                     </div>
-                    <a href="https://dentaltrack-hub.lovable.app" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold py-2.5 px-4 rounded-xl transition">
-                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> معاينة التطبيق الحي
+                    <a href="https://dentaltrack-hub.lovable.app" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> معاينة التطبيق الحي
                     </a>
                 </div>
 
-                <!-- مشروع 3: برمجيات قواعد البيانات AfneSoft -->
-                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-6">
+                <!-- مشروع 3 -->
+                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-5">
                     <div>
-                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">
                             <i class="fa-solid fa-database"></i>
                         </div>
-                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Microsoft Access & VBA</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-2 mb-3">نظام AfneSoft والمشاريع المخصصة</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">أنظمة سطح مكتب مخصصة مع أتمتة كاملة للبيانات والتقارير المالية والدورية والربط الذكي.</p>
+                        <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">Microsoft Access & VBA</span>
+                        <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">نظام AfneSoft والمشاريع المخصصة</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">أنظمة سطح مكتب مخصصة مع أتمتة كاملة للبيانات والتقارير المالية والدورية والربط الذكي.</p>
                     </div>
-                    <a href="https://khamsat.com/user/afnes" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-900 text-white text-sm font-semibold py-2.5 px-4 rounded-xl transition">
-                        <i class="fa-solid fa-message text-xs"></i> طلب استشارة أو نظام مخصص
+                    <a href="https://khamsat.com/user/afnes" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-900 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+                        <i class="fa-solid fa-message text-[10px]"></i> طلب استشارة أو نظام
                     </a>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Khamsat Reviews Section (تقييمات خمسات الموثقة) -->
-    <section id="reviews" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 text-amber-500 mb-2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">تقييمات موثقة من عملاء خمسات</h2>
-                <p class="text-slate-600">آراء حقيقية من مشتري الخدمات مع إمكانية التحقق منها مباشرة بالضغط على رابط التقييم.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- تقييم 1143252 -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center gap-1 text-amber-400 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <span class="text-[11px] font-bold text-slate-400">#1143252</span>
-                        </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"عمل ممتازة وسرعة بالدقة والانجاز وانصح بالتعامل معه."</p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
-                        <span class="text-xs font-semibold text-slate-500">تقييم ممتاز على خمسات</span>
-                        <a href="https://khamsat.com/user/afnes/reviews/1143252" target="_blank" class="text-xs text-indigo-600 hover:underline font-bold flex items-center gap-1">
-                            رابط التقييم <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- تقييم 1143221 -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center gap-1 text-amber-400 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <span class="text-[11px] font-bold text-slate-400">#1143221</span>
-                        </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"ما شاء الله تبارك الله، سرعة واحترافية عالية في تنفيذ المطلوب وإيجاد الحل البرمجي المناسب."</p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
-                        <span class="text-xs font-semibold text-slate-500">تقييم ممتاز على خمسات</span>
-                        <a href="https://khamsat.com/user/afnes/reviews/1143221" target="_blank" class="text-xs text-indigo-600 hover:underline font-bold flex items-center gap-1">
-                            رابط التقييم <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- تقييم 1136717 -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center gap-1 text-amber-400 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <span class="text-[11px] font-bold text-slate-400">#1136717</span>
-                        </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"مستعد للعمل مع الأخ مرة أخرى، متجاوب وسريع ومتمكن جداً من أدوات التكويد والبيانات."</p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
-                        <span class="text-xs font-semibold text-slate-500">تقييم ممتاز على خمسات</span>
-                        <a href="https://khamsat.com/user/afnes/reviews/1136717" target="_blank" class="text-xs text-indigo-600 hover:underline font-bold flex items-center gap-1">
-                            رابط التقييم <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="mt-12 text-center">
-                <a href="https://khamsat.com/user/afnes" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md">
-                    <i class="fa-solid fa-external-link"></i> استعرض الصفحة الشخصية وكافة التقييمات على خمسات (afnes)
-                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-12 text-center text-sm">
+    <footer class="bg-slate-900 text-white py-8 text-center text-xs">
         <p class="text-slate-400">© 2026 Haroun Digital Solutions. جميع الحقوق محفوظة.</p>
     </footer>
 </body>

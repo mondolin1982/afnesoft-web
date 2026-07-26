@@ -1,240 +1,187 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Building2, 
-  Smartphone, 
-  Globe, 
-  Layers, 
-  Cpu, 
-  CheckCircle2, 
-  Star, 
-  ArrowLeft, 
-  Send, 
-  Phone, 
-  Mail, 
-  Linkedin, 
-  MessageSquare, 
-  ShieldCheck, 
-  Award, 
-  Users, 
-  Clock, 
-  Plus, 
-  Trash2, 
-  ExternalLink,
-  Sparkles,
-  Lock,
-  X,
-  Menu
-} from 'lucide-react';
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haroun Digital Solutions | خدمات البرمجة والحلول الرقمية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-interface Project {
-  id: string;
-  title: string;
-  category: string;
-  image: string;
-  problem: string;
-  solution: string;
-  client: string;
-}
-
-interface Testimonial {
-  id: string;
-  clientName: string;
-  companyName: string;
-  reviewText: string;
-  rating: number;
-  originalLink: string;
-}
-
-export default function App() {
-  const [activeTab, setActiveTab] = useState<'home' | 'services' | 'portfolio' | 'reviews' | 'admin' | 'contact'>('home');
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // Admin CMS State
-  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
-  const [adminPass, setAdminPass] = useState('');
-  
-  // Dynamic Services State (حتى تتمكن من التعديل والإضافة)
-  const [services, setServices] = useState([
-    { id: '1', title: 'تصميم وتطوير تطبيقات الويب', price: '$100.00', image: '7190.jpg', desc: 'تطبيقات وواجهات متقدمة للشركات والمنصات.' },
-    { id: '2', title: 'سأصمم لك صفحة هبوط احترافية', price: '$50.00', image: '7189.jpg', desc: 'صفحات هبوط لزيادة العملاء والمبيعات.' },
-    { id: '3', title: 'وكيل ذكاء اصطناعي لخدمة عملائك', price: '$80.00', image: '7191.jpg', desc: 'ردود ذكية وفورية على مدار الساعة.' }
-  ]);
-
-  const [projects, setProjects] = useState<Project[]>([
-    {
-      id: 'p1',
-      title: 'منصة وسيط العقاري (3akkari)',
-      category: 'تطبيقات الويب',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
-      problem: 'إدارة معقدة لعقود وإيجارات العقارات.',
-      solution: 'منصة سحابية متكاملة للوحة التحكم والأتمتة.',
-      client: 'الرياض - السعودية'
-    }
-  ]);
-
-  // Handle Admin Login
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (adminPass === 'admin123') {
-      setIsAdminLoggedIn(true);
-    } else {
-      alert('كلمة المرور غير صحيحة (جرب: admin123)');
-    }
-  };
-
-  return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans dir-rtl" dir="rtl">
-      
-      {/* Top Navigation */}
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveTab('home')}>
-            <div className="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">H</div>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">H</div>
+                <div>
+                    <span class="text-sm font-black tracking-tight text-slate-900 block leading-none">هارون الرقمية</span>
+                    <span class="text-[9px] text-indigo-600 font-semibold block mt-0.5">Haroun Digital</span>
+                </div>
+            </div>
+            
             <div>
-              <span className="text-sm font-black tracking-tight text-slate-900 block leading-none">هارون الرقمية</span>
-              <span className="text-[9px] text-indigo-600 font-semibold block mt-0.5">Haroun Digital</span>
+                <a href="https://khamsat.com/user/afnes" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-xl font-bold text-xs shadow-md transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-cart-shopping"></i> اطلب الآن
+                </a>
             </div>
-          </div>
-
-          <nav className="hidden md:flex items-center gap-6 font-medium text-sm text-slate-600">
-            <button onClick={() => setActiveTab('home')} className="hover:text-indigo-600 transition">الرئيسية</button>
-            <button onClick={() => setActiveTab('services')} className="hover:text-indigo-600 transition">خدمات خمسات</button>
-            <button onClick={() => setActiveTab('portfolio')} className="hover:text-indigo-600 transition">معرض الأعمال</button>
-            <button onClick={() => setActiveTab('reviews')} className="hover:text-indigo-600 transition">التقييمات</button>
-            <button onClick={() => setActiveTab('admin')} className="text-indigo-600 font-bold flex items-center gap-1">
-              <Lock className="w-3.5 h-3.5" /> لوحة التحكم
-            </button>
-          </nav>
-
-          <div>
-            <a href="https://khamsat.com/user/afnes" target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-xl font-bold text-xs shadow-md transition inline-flex items-center gap-1.5">
-              <i class="fa-solid fa-cart-shopping"></i> اطلب الآن
-            </a>
-          </div>
         </div>
-      </header>
+    </header>
 
-      {/* Main Content Area */}
-      <main className="py-8">
-        
-        {activeTab === 'home' && (
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center py-12 max-w-3xl mx-auto">
-              <h1 className="text-3xl sm:text-5xl font-black text-slate-900 mb-4">
-                حلول برمجة متكاملة مع <span className="text-indigo-600">خدمات خمسات المعتمدة</span>
-              </h1>
-              <p className="text-slate-600 text-sm sm:text-base mb-8">
-                تطوير تطبيقات الويب، صفحات الهبوط، وأتمتة الوكلاء بالذكاء الاصطناعي.
-              </p>
-              <div className="flex justify-center gap-4">
-                <button onClick={() => setActiveTab('services')} className="bg-emerald-500 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md">
-                  استعرض الخدمات المتاحة
-                </button>
-              </div>
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-16 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold mb-4">
+                <i class="fa-solid fa-code"></i> تطوير برمجيات احترافية وقواعد بيانات سحابية
+            </div>
+            <h1 class="text-2xl sm:text-5xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight mb-4">
+                حلول برمجة متكاملة لتطوير أعمالك مع <span class="text-indigo-600">خدمات خمسات المعتمدة</span>
+            </h1>
+            <p class="text-xs sm:text-base text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                نقدم خدمات تطوير تطبيقات الويب، صفحات الهبوط، وأتمتة الوكلاء بالذكاء الاصطناعي.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="#services" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg transition">استعرض الخدمات</a>
+                <a href="#portfolio" class="w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-bold text-sm transition">معرض المشاريع الحية</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-indigo-600 font-bold text-xs uppercase tracking-wider">خدماتنا المباشرة</span>
+                <h2 class="text-xl sm:text-3xl font-bold tracking-tight text-slate-900 mt-1 mb-2">خدمات البرمجة والتطوير على منصة خمسات</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">اختر الخدمة المناسبة لمشروعك واطلبها مباشرة عبر منصة خمسات لضمان التعامل المالي والتقني.</p>
             </div>
 
-            {/* Services Display */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              {services.map((srv) => (
-                <div key={srv.id} className="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div className="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center text-slate-500 font-bold">
-                      {/* عرض اسم الصورة أو معاينة */}
-                      <span>صورة الخدمة: {srv.image}</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <!-- الخدمة الأولى: تطبيقات الويب (Web.jpg) -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-200 overflow-hidden">
+                            <img src="Web.jpg" alt="تطبيقات الويب" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">برمجة / تطبيقات ويب</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">تصميم وتطوير تطبيقات ويب احترافية مخصصة</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
+                                <div class="flex text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] text-slate-500 font-semibold">(1)</span>
+                            </div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $100.00</div>
+                        </div>
                     </div>
-                    <div className="p-4">
-                      <h3 className="text-base font-bold text-slate-900 mb-1">{srv.title}</h3>
-                      <p className="text-slate-600 text-xs mb-3">{srv.desc}</p>
-                      <div className="text-indigo-600 font-black text-base">تبدأ من {srv.price}</div>
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/user/afnes" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
+                            <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
+                        </a>
                     </div>
-                  </div>
-                  <div className="p-4 pt-0">
-                    <a href="https://khamsat.com/user/afnes" target="_blank" className="w-full bg-emerald-500 text-white py-2.5 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
-                      اطلب الخدمة
+                </div>
+
+                <!-- الخدمة الثانية: صفحة هبوط (landing.jpg) -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-200 overflow-hidden">
+                            <img src="landing.jpg" alt="صفحة هبوط" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">تصميم / صفحات هبوط</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">سأصمم لك صفحة هبوط احترافية لزيادة العملاء والمبيعات</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
+                                <div class="flex text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] text-slate-500 font-semibold">(1)</span>
+                            </div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $50.00</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/user/afnes" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
+                            <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- الخدمة الثالثة: وكيل ذكاء اصطناعي (Ai.jpg) -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-200 overflow-hidden">
+                            <img src="Ai.jpg" alt="وكيل ذكاء اصطناعي" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-purple-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">ذكاء اصطناعي</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-sm font-bold text-slate-900 mb-2 leading-snug">بناء وتطوير وكيل ذكاء اصطناعي مخصص لأعمالك</h3>
+                            <div class="flex items-center gap-1.5 mb-2">
+                                <div class="flex text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[11px] text-slate-500 font-semibold">(جديدة)</span>
+                            </div>
+                            <div class="text-indigo-600 font-black text-base">تبدأ من $80.00</div>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <a href="https://khamsat.com/user/afnes" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 px-4 rounded-xl transition text-xs shadow-md">
+                            <i class="fa-solid fa-cart-shopping"></i> اطلب الخدمة
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-12 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-2">معرض الأعمال والمشاريع الحية</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">يمكن للزائر تجربة المشاريع مباشرة عبر الروابط الميدانية التفاعلية.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                
+                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-5">
+                    <div>
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">تطبيقات الويب SaaS</span>
+                        <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">منصة وسيط العقاري (3akkari)</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">منصة سحابية متكاملة لإدارة عقود وإيجارات العقارات مع لوحات تحكم وتسهيل إدارة العقارات.</p>
+                    </div>
+                    <a href="https://3akkari.com" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> معاينة المنصة الحية
                     </a>
-                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
 
-        {/* Admin CMS View */}
-        {activeTab === 'admin' && (
-          <div className="max-w-2xl mx-auto bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
-            {!isAdminLoggedIn ? (
-              <form onSubmit={handleLogin} className="space-y-4">
-                <h2 className="text-xl font-bold text-slate-900">تسجيل دخول لوحة التحكم</h2>
-                <input 
-                  type="password" 
-                  placeholder="كلمة المرور (تجريبي: admin123)"
-                  value={adminPass}
-                  onChange={(e) => setAdminPass(e.target.value)}
-                  className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none"
-                />
-                <button type="submit" className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold text-sm">
-                  دخول لوحة التعديل
-                </button>
-              </form>
-            ) : (
-              <div className="space-y-6">
-                <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-bold text-slate-900">إدارة الخدمات والأسعار والصور</h2>
-                  <button onClick={() => setIsAdminLoggedIn(false)} className="text-xs text-red-600 font-bold">تسجيل خروج</button>
-                </div>
-                <p className="text-xs text-slate-500">يمكنك تعديل محتوى الخدمات مباشرة هنا ليظهر للزوار فوراً.</p>
-                
-                {services.map((s, idx) => (
-                  <div key={s.id} className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2">
-                    <span className="text-xs font-bold text-indigo-600">خدمة رقم {idx+1}</span>
-                    <input 
-                      type="text" 
-                      value={s.title}
-                      onChange={(e) => {
-                        const updated = [...services];
-                        updated[idx].title = e.target.value;
-                        setServices(updated);
-                      }}
-                      className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs"
-                    />
-                    <div className="flex gap-2">
-                      <input 
-                        type="text" 
-                        value={s.price}
-                        onChange={(e) => {
-                          const updated = [...services];
-                          updated[idx].price = e.target.value;
-                          setServices(updated);
-                        }}
-                        className="w-1/2 bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs"
-                      />
-                      <input 
-                        type="text" 
-                        value={s.image}
-                        placeholder="اسم الصورة (مثال: 7190.jpg)"
-                        onChange={(e) => {
-                          const updated = [...services];
-                          updated[idx].image = e.target.value;
-                          setServices(updated);
-                        }}
-                        className="w-1/2 bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs"
-                      />
+                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between p-5">
+                    <div>
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">أنظمة إدارة ورش العمل</span>
+                        <h3 class="text-base font-bold text-slate-900 mt-1 mb-2">نظام Dental Flow Pro</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">تطبيق سحابي مخصص لإدارة طلبات ومراحل تصنيع معامل الأسنان ومتابعة سير العمل.</p>
                     </div>
-                  </div>
-                ))}
-                
-                <div className="bg-emerald-50 text-emerald-800 p-3 rounded-xl text-xs font-bold text-center">
-                  تم حفظ التعديلات في الذاكرة الحية بنجاح!
+                    <a href="https://dentaltrack-hub.lovable.app" target="_blank" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> معاينة التطبيق الحي
+                    </a>
                 </div>
-              </div>
-            )}
-          </div>
-        )}
 
-      </main>
+            </div>
+        </div>
+    </section>
 
-    </div>
-  );
-}
-
-                    
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 text-center text-xs">
+        <p class="text-slate-400">© 2026 Haroun Digital Solutions. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+      </html>
+      

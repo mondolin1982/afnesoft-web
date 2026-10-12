@@ -1,0 +1,12 @@
+name = "afnesoft-library-api"
+main = "index.js"
+compatibility_date = "2026-10-12"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
+
+[vars]
+ADMIN_EMAIL = "REPLACE_WITH_YOUR_ADMIN_EMAIL"
+ALLOWED_ORIGIN = "https://REPLACE_WITH_YOUR_PAGES_DOMAIN"
+MAX_UPLOAD_BYTES = "94371840"
